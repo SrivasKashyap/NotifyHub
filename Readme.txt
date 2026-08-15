@@ -63,39 +63,7 @@ Vapi.ai Assistant  <-->  vapi_utils.py
                      ↑
                      │
 Caller Script  <-->  call_me.py
-_________________________________________________________________________________________________________________________________________________
 
-->Setup Instructions
-1. Clone the Repository
-   git clone https://github.com/<your-username>/NotifyHub.git
-   cd NotifyHub
-
-2. Create and Fill the .env File
-   Add your credentials:
-
-  VAPI_API_KEY=your_vapi_api_key
-  VAPI_ASSISTANT_ID=your_vapi_assistant_id
-  VAPI_PHONE_NUMBER_ID=your_vapi_phone_number_id
-  DEFAULT_COUNTRY_CODE=+91
-  GOOGLE_SHEETS_ID=your_google_sheet_id
-
-3. Add Service Account Credentials
-   Place your Google service account key file in:
-   credentials/service_account.json
-
-4. Install Dependencies
-   pip install -r requirements.txt
-
-5. Run Flask Webhook Server
-   python webhook_server.py
-
-  Expose it via ngrok:
-  ngrok http 5001
- 
-  Copy the ngrok HTTPS URL and add it as your Vapi Webhook URL in the assistant dashboard.
-
-6. Start Calling Patients
-   python call_me.py
 _________________________________________________________________________________________________________________________________________________
 
 ->Google Sheets Format
